@@ -1,0 +1,13 @@
+name: 'Sample CI Helper'
+description: 'A minimal example action that prints a greeting'
+inputs:
+  name:
+    description: 'Name to greet'
+    required: false
+    default: 'World'
+outputs:
+  greeting:
+    description: 'The greeting string'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
